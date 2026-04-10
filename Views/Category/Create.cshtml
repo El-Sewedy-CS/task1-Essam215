@@ -1,0 +1,11 @@
+﻿@model Demo_2.Models.Category
+
+<h1>Create Category</h1>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="CategoryName"></label>
+        <input asp-for="CategoryName" />
+    </div>
+    <button type="submit">Create</button>
+</form>

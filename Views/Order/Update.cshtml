@@ -1,0 +1,17 @@
+﻿@model Demo_2.Models.Order
+
+<h1>Update Order</h1>
+
+<form asp-action="Update" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label asp-for="OrderDate"></label>
+        <input asp-for="OrderDate" type="date" />
+    </div>
+    <div>
+        <label asp-for="Quantity"></label>
+        <input asp-for="Quantity" type="number" />
+    </div>
+    <button type="submit">Update</button>
+    <a asp-action="Index">Cancel</a>
+</form>

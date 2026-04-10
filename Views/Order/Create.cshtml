@@ -1,0 +1,15 @@
+﻿@model Demo_2.Models.Order
+
+<h1>Create Order</h1>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="OrderDate"></label>
+        <input asp-for="OrderDate" type="date" />
+    </div>
+    <div>
+        <label asp-for="Quantity"></label>
+        <input asp-for="Quantity" type="number" />
+    </div>
+    <button type="submit">Create</button>
+</form>

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Demo_2.Models.Order>
+
+<h1>Orders</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Order Date</th>
+            <th>Total Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.Id</td>
+                <td>@order.OrderDate</td>
+                <td>@order.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
